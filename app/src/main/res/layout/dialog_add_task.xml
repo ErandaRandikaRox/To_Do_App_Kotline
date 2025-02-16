@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Layout for adding or editing a to-do task.
+    Includes input fields for title and description, along with Save and Cancel buttons.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!--
+        EditText for entering the task title.
+        Displays a hint and uses a standard text size.
+    -->
+    <EditText
+        android:id="@+id/etTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Task Title"
+        android:textSize="16sp"/>
+
+    <!--
+        EditText for entering the task description.
+        Positioned below the title input field with a margin for spacing.
+    -->
+    <EditText
+        android:id="@+id/etTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Task Description"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!--
+        Horizontal layout containing action buttons (Cancel and Save).
+        Positioned at the end of the parent layout for alignment.
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="16dp">
+
+        <!--
+            Button to cancel the action and dismiss the form.
+        -->
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+
+        <!--
+            Button to save the entered task.
+            Positioned with a margin to separate it from the Cancel button.
+        -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<!--
+    Layout file for displaying the details of a ToDo item.
+    It consists of two TextViews: one for the title and one for the description.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TextView to display the title of the ToDo item -->
+    <TextView
+        android:id="@+id/detailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+    <!-- TextView to display the description of the ToDo item -->
+    <TextView
+        android:id="@+id/detailDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
